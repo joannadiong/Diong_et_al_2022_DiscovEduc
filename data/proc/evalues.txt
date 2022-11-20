@@ -1,0 +1,42 @@
+
+================================================================
+BIOS1168 End-semester mark: Cohen's d
+================================================================
+
+Effect Size Calculation for Meta Analysis
+
+     Conversion: mean and se to effect size d
+    Effect Size:   0.5767
+ Standard Error:   0.1716
+       Variance:   0.0294
+       Lower CI:   0.2405
+       Upper CI:   0.9130
+         Weight:  33.9747
+
+================================================================
+E value
+================================================================
+            point    lower    upper
+RR       1.690161 1.245383 2.293789
+E-values 2.770200 1.798189       NA
+
+================================================================
+BIOS5090 End-semester mark: Cohen's d
+================================================================
+
+Effect Size Calculation for Meta Analysis
+
+     Conversion: mean and se to effect size d
+    Effect Size:  -0.6133
+ Standard Error:   0.1743
+       Variance:   0.0304
+       Lower CI:  -0.9549
+       Upper CI:  -0.2717
+         Weight:  32.9243
+
+================================================================
+E value
+================================================================
+             point     lower     upper
+RR       0.5722937 0.4196571 0.7804467
+E-values 2.8901117        NA 1.8816982

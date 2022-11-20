@@ -1,0 +1,81 @@
+
+>>> Count missing values for any variable
+       Unnamed: 0  uid  id  grade  age  gender  atar  course_code  group  ese_100_percent
+group                                                                                    
+0               0    0   0      0   60      60    60           60      0                1
+1               0    0   0      0   55      55    55           55      0                2
+
+>>> Check all IC, AF, grades: set to NaN
+     Unnamed: 0  uid  id grade  age gender  atar course_code  group  ese_100_percent
+44           44   44  44    AF  NaN    NaN   NaN         NaN      1              NaN
+51           51   51  51    AF  NaN    NaN   NaN         NaN      1              NaN
+125         125  125  58    AF  NaN    NaN   NaN         NaN      0              NaN
+
+>>> Check any FA that is exactly 0. Student enrolled and withdrew but was missed: set to NaN
+Empty DataFrame
+Columns: [Unnamed: 0, uid, id, grade, age, gender, atar, course_code, group, ese_100_percent]
+Index: []
+
+>>> Count missing values again for any variable
+       Unnamed: 0  uid  id  grade  age  gender  atar  course_code  group  ese_100_percent
+group                                                                                    
+0               0    0   0      0   60      60    60           60      0                1
+1               0    0   0      0   55      55    55           55      0                2
+>>> summary: n=1 (group 0); same as first count
+>>> summary: n=2 (group 1); same as first count
+>>> Only 15-18% of cohort data are available for age, gender, atar, course_code
+
+>>> Summarise variables by group
+
+Variable: sex
+      count unique     top freq
+group                          
+0        11      1  Female   11
+1        12      2  Female   10
+
+Variable: age
+       count       mean       std   min   25%   50%   75%   max
+group                                                          
+0       11.0  24.090909  3.477198  21.0  22.0  24.0  24.0  34.0
+1       12.0  22.666667  1.154701  21.0  22.0  22.5  24.0  24.0
+
+Variable: atar
+       count       mean       std    min      25%     50%      75%    max
+group                                                                    
+0       11.0  87.963636  8.659650  63.75  88.3250  89.000  92.4250  95.30
+1       12.0  88.329167  6.021909  76.55  84.2375  89.375  92.1125  96.45
+
+Variable: ese_100_percent
+       count       mean        std        min        25%        50%        75%         max
+group                                                                                     
+0       70.0  80.467532  14.072705  38.909091  74.454545  82.909091  91.818182  100.000000
+1       65.0  72.386122  12.368679  39.720280  65.262937  74.513287  80.783217   95.692308
+
+
+Linear regression of ESE score on group:
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:        ese_100_percent   R-squared:                       0.086
+Model:                            OLS   Adj. R-squared:                  0.079
+Method:                 Least Squares   F-statistic:                     12.48
+Date:                Sun, 20 Nov 2022   Prob (F-statistic):           0.000566
+Time:                        12:44:54   Log-Likelihood:                -539.69
+No. Observations:                 135   AIC:                             1083.
+Df Residuals:                     133   BIC:                             1089.
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     80.4675      1.587     50.696      0.000      77.328      83.607
+group         -8.0814      2.287     -3.533      0.001     -12.606      -3.557
+==============================================================================
+Omnibus:                       14.274   Durbin-Watson:                   1.987
+Prob(Omnibus):                  0.001   Jarque-Bera (JB):               15.622
+Skew:                          -0.815   Prob(JB):                     0.000405
+Kurtosis:                       3.345   Cond. No.                         2.58
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
