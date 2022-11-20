@@ -13,11 +13,9 @@ An observational study using a causal inference approach. Discover Education (in
 
 ## Protocol registration
 
-The protocol for this study was registered on the Open Science Framework (OSF): [https://osf.io/7f3nk][rego]
+Protocol registration on the Open Science Framework (OSF): [https://osf.io/ws8mv][rego]
 
-This study is a secondary analysis of data from a related study, which is under the same registered protocol. \
-The description, data and code of the related study are available from the GitHub repository:
-[https://github.com/joannadiong/Kishimoto_et_al_2021_JAP][Kishimoto]
+OSF project repository: [https://osf.io/xhs83/][project]
 
 ## Data
 
@@ -94,7 +92,8 @@ R generated file, saved in __data -> proc__:
 * evalues.txt
 
 
-[rego]: <protocol_registration_link>
+[rego]: https://osf.io/ws8mv
+[project]: https://osf.io/xhs83/
 [spike2py]: https://github.com/MartinHeroux/spike2py
 [Anaconda]: https://www.anaconda.com/products/distribution
 [pycharm]: https://www.jetbrains.com/pycharm/promo/?gclid=Cj0KCQiAtqL-BRC0ARIsAF4K3WFahh-pzcvf6kmWnmuONEZxi544-Ty-UUqKa4EelnOxa5pAC9C4_d4aAisxEALw_wcB 
