@@ -1,0 +1,33 @@
+dag {
+"COVID lockdown" [pos="-1.126,1.208"]
+"Canvas engagement time" [pos="-0.227,0.306"]
+"End-sem exam mark" [outcome,pos="0.167,1.205"]
+"Exam difficulty" [pos="-0.223,0.605"]
+"Exam format" [pos="-0.227,0.901"]
+"Lecturer engagement" [pos="-0.753,1.677"]
+"Mid-sem exam mark and feedback" [pos="-0.384,1.460"]
+"Mode of teaching" [exposure,pos="-0.810,1.202"]
+"Repeat unit" [pos="-0.458,0.025"]
+"Student motivation" [pos="-0.746,1.427"]
+ATAR [pos="-0.224,-0.175"]
+"COVID lockdown" -> "Lecturer engagement"
+"COVID lockdown" -> "Mode of teaching"
+"COVID lockdown" -> "Student motivation"
+"Canvas engagement time" -> "End-sem exam mark"
+"Exam difficulty" -> "End-sem exam mark"
+"Exam format" -> "End-sem exam mark"
+"Mid-sem exam mark and feedback" -> "End-sem exam mark"
+"Mid-sem exam mark and feedback" -> "Lecturer engagement"
+"Mid-sem exam mark and feedback" -> "Student motivation"
+"Mode of teaching" -> "Canvas engagement time"
+"Mode of teaching" -> "End-sem exam mark"
+"Mode of teaching" -> "Exam difficulty"
+"Mode of teaching" -> "Exam format"
+"Mode of teaching" -> "Lecturer engagement"
+"Mode of teaching" -> "Mid-sem exam mark and feedback"
+"Mode of teaching" -> "Student motivation"
+"Repeat unit" -> "Canvas engagement time"
+ATAR -> "Canvas engagement time"
+ATAR -> "End-sem exam mark"
+ATAR -> "Repeat unit"
+}

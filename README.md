@@ -17,6 +17,12 @@ Protocol registration on the Open Science Framework (OSF): [https://osf.io/ws8mv
 
 OSF project repository: [https://osf.io/xhs83/][project]
 
+## Documents
+
+Stored in _doc_:
+* notes.pdf: Project study notes on the thinking process behind development and refinement of the causal graph
+* causal_graph.txt: [DAGitty][dagitty] code to generate the causal graph
+
 ## Data
 
 De-identified processed data of examination marks for undergraduate and postgraduate cohorts are available in __data -> proc__:
@@ -92,6 +98,7 @@ R generated file, saved in __data -> proc__:
 * evalues.txt
 
 
+[dagitty]: http://www.dagitty.net/
 [rego]: https://osf.io/ws8mv
 [project]: https://osf.io/xhs83/
 [spike2py]: https://github.com/MartinHeroux/spike2py
